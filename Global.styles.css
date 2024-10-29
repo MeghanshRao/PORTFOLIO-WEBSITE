@@ -1,0 +1,71 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.pp-scrollable {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    filter: brightness(0.6); /* Adjust brightness for text readability */
+}
+
+.scrollable-content {
+    position: relative;
+    z-index: 2;
+}
+
+.vertical-centred {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.boxed-inner {
+    max-width: 1200px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.75); /* Semi-transparent for readability */
+    border-radius: 8px;
+}
+
+h2 {
+    color: #00c853;
+}
+
+ul li i {
+    color: #00c853;
+}
+
+.progress-bar {
+    background: #00c853;
+}
+
+.vertical-title {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
